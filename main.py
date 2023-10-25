@@ -1,4 +1,6 @@
+#Noah Lunberry COP3502C
 def encode(unencoded):
+    # Noah Lunberry COP3502C
     templist = list(unencoded)
     newlist = []
     for i in templist:

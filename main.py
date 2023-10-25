@@ -34,7 +34,6 @@ if __name__ == '__main__':
             unencoded = input('Please enter your password to encode: ')
             encoded_password = encode(unencoded)
             print('Your password has been encoded and stored!')
-            print(encoded_password)
             print()
         elif choice == 2:
             decoded_password = decode(str(encoded_password))

@@ -19,8 +19,7 @@ def decode(encoded_password):
     return ''.join(newlist)
 
 
-
-if __name__ == '__main__':
+def main():
     x = True
     encoded_password = None
     while x:
@@ -42,3 +41,7 @@ if __name__ == '__main__':
             print(f'The encoded password is {encoded_password}, and the original password is {decoded_password}.')
         elif choice == 3:
             x = False
+
+
+if __name__ == '__main__':
+    main()

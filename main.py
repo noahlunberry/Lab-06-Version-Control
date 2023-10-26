@@ -9,12 +9,12 @@ def encode(unencoded):
 
     return ''.join(newlist)
 
-
+# August McDaniel COP3502C
 def decode(encoded_password):
     templist = list(encoded_password)
     newlist = []
     for i in templist:
-        encoded_char = str(int(i) -3)
+        encoded_char = str((int(i) - 3) % 10)
         newlist.append(encoded_char)
     return ''.join(newlist)
 
@@ -42,5 +42,3 @@ if __name__ == '__main__':
             print(f'The encoded password is {encoded_password}, and the original password is {decoded_password}.')
         elif choice == 3:
             x = False
-
-

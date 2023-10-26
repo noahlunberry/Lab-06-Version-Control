@@ -4,17 +4,17 @@ def encode(unencoded):
     templist = list(unencoded)
     newlist = []
     for i in templist:
-        encoded_char = str(int(i) + 3)
+        encoded_char = str((int(i) + 3) % 10)
         newlist.append(encoded_char)
 
     return ''.join(newlist)
 
-
+# August McDaniel COP3502C
 def decode(encoded_password):
     templist = list(encoded_password)
     newlist = []
     for i in templist:
-        encoded_char = str(int(i) -3)
+        encoded_char = str((int(i) - 3) % 10)
         newlist.append(encoded_char)
     return ''.join(newlist)
 

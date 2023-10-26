@@ -4,7 +4,7 @@ def encode(unencoded):
     templist = list(unencoded)
     newlist = []
     for i in templist:
-        encoded_char = str(int(i) + 3)
+        encoded_char = str((int(i) + 3) % 10)  # ensure the result is within the digit range (0-9)
         newlist.append(encoded_char)
 
     return ''.join(newlist)
